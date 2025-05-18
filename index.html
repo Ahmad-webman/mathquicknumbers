@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quick Numbers</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo"><span>M</span>ath<span>Q</span>uick<span>N</span>umbers</div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="explore.html">Explore</a>
+            
+            </div>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <div class="top"></div>
+                <div class="mid"></div>
+                <div class="bottom"></div>
+            </div>
+            <div class="mobile-container">
+                <a href="index.html" style="color: #FFF; background: transparent; border: 2px solid #fff;">Home</a>
+                <a href="about.html">About</a>
+                <a href="explore.html">Explore</a>
+            </div>
+        </div>
+    </header>
+    <div class="content-container">
+        
+        <div class="operators">
+            <label for="operator">Numer Type:</label>
+            <select id="number-options" onchange="checkMultipleValue()">
+                <option selected disabled>Select a number type</option>
+                <option value="binary">Binary Numbers</option>
+                <option value="squares">Square Numbers</option>
+                <option value="cube">Cube Numbers</option>
+                <option value="prime">Prime Numbers</option>
+                <option value="factors">Factors</option>
+                <option value="multiples">Multiples</option>
+                <option value="fibonacci">Fibonacci Numbers</option>
+                <option value="factorial">Factorial Numbers</option>
+                <option value="triangular">Triangular Numbers</option>
+                <option value="perfect">Perfect Numbers</option>
+                <option value="armstrong">Armstrong Numbers</option>
+                <option value="hexadecimal">Hexadecimal Numbers</option>
+                <option value="octal">Octal Numbers</option>
+                <option value="powers-of-two">Powers of Two</option>
+                <option value="powers-of-three">Powers of Three</option>
+                <option value="powers-of-ten">Powers of Ten</option>
+                
+            </select>
+            <label for="separator">Separator:</label>
+            <select name="" id="separator">
+                <option selected disabled>Select a separator</option>
+                <option value="">Nothing ()</option>
+                <option value=" ">Space ( )</option>
+                <option value=",">Comma (,)</option>
+                <option value=", ">Comma and Space(, )</option>
+                <option value=".">Dot (.)</option>
+                <option value="-">Dash (-)</option>
+                <option value="_">Underscore (_)</option>
+            </select>
+            <label for="quantity">Number Quantity:</label>
+            <input id="print-amount" type="number" placeholder="eg. 157" oninput="checkInputValue()">
+            <div class="multiple-inputs">
+                <label for="from">From:</label>
+                <input id="from" type="number" placeholder="eg. 5">
+                <label for="from">Up To:</label>
+                <input id="upto" type="number" placeholder="eg. 100">
+            </div>
+            <div id="error-msg"></div>
+            <button id="generate-numbers">Generate</button>
+        </div>
+        <div class="my-results">
+            <div id="results-container"></div>
+        </div>
+
+        <button id="copy-button">Copy to Clipboard</button>
+    </div>
+    <footer>
+        <p>&copy; 2025 MathQuickNumbers. All rights reserved.</p><br>
+        <p class="developer">Developed by <a href="https://ahmadusman.org">Ahmad Usman</a></p>
+    </footer>
+    <script src="javascript/script.js">
+   
+        
+    </script>
+</body>
+</html>
